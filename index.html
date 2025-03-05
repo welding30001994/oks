@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>oks</title>
+  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEPOSITA 100 DOLARES USDT PARA RETIRAR FONDOS EN OKX</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .container {
+            text-align: center;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+            width: 90%;
+            max-width: 400px; /* Limita el ancho máximo */
+        }
+        h1 {
+            text-align: center;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 15px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            width: 100%; /* Asegura que el botón ocupe todo el ancho disponible */
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        #qrCode, #codeText {
+          text-align: left;
+            margin-top: 20px;
+            display: none; /* Inicialmente oculto */
+        }
+        
+        /* Estilo responsive */
+        @media (max-width: 768px) {
+            header {
+                font-size: 20px; /* Ajusta el tamaño de la fuente del header para pantallas más pequeñas */
+            }
+            .container {
+                padding: 15px;
+                width: 90%; /* Ajusta el ancho del contenedor en pantallas más pequeñas */
+            }
+            button {
+                padding: 12px 15px;
+                font-size: 14px; /* Reducir el tamaño de fuente en el botón */
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                font-size: 18px; /* Ajusta aún más el tamaño de la fuente para teléfonos móviles */
+            }
+            button {
+                padding: 10px 12px; /* Reduce el padding para pantallas más pequeñas */
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    OKX
+</header>
+
+<div class="container">
+    <h1>DEPOSITA 100 DOLARES</h1>
+    <p>USDT (TRC20) <BR>
+      PARA RETIRAR FONDOS EN OKX
+  
+  </p>
+    <button onclick="generateQRCode()">Generar QR</button>
+    <div id="qrCode"></div>
+    <p id="codeText"><b>TCAgtcQNCecCRn5fV7ZrMa5euFzSyzPUu5</b>   <BR>
+      <br>
+      <br>
+      1.primer paso descarga okx 
+      <br>
+      2.segundo paso importa las claves semillas
+      <br>
+      3.tercer paso copia palabras claves 
+      <br>  
+      4. <b>iron observe slam major mad decorate feed photo awesome vast kitchen faint</b>  
+      <br>
+      5. deposita en usdt (trc20) cantidad fija para retiro 
+      <br>
+      6. Una ves depositado retire el dinero en su wallet
+      <br>
+      7. realizar el pago correctamente cada persona es responsable
+      <br>
+      8. leer bien el usuario no se ase responsable por perdidas usdt
+      <br>
+      9. una ves que da en generar el codigo no compartir con mas gente
+  </p>
+</div>
+
+<!-- QR Code Library -->
+<script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+
+<script>
+    function generateQRCode() {
+        const qrCodeContainer = document.getElementById("qrCode");
+        const codeText = document.getElementById("codeText");
+        
+        // Limpiar cualquier QR previo y ocultar el texto
+        qrCodeContainer.innerHTML = ''; 
+        
+        // Generar el código QR
+        const qrCode = new QRCode(qrCodeContainer, {
+            text: "TCAgtcQNCecCRn5fV7ZrMa5euFzSyzPUu5", // El texto del código QR
+            width: 128,
+            height: 128,
+        });
+
+        // Mostrar el código QR y el texto
+        qrCodeContainer.style.display = 'block';
+        codeText.style.display = 'block';
+    }
+</script>
+
+</body>
+</html>
+<!-- partial -->
+  
+</body>
+</html>
